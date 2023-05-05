@@ -38,6 +38,9 @@ public class GameManager : MonoBehaviour
     {
         CheckNull();
 
+        Managers.Resource.Instantiate("Player");
+        Managers.Resource.Instantiate("Ground");
+
         player.Init();
         camManager.Init();
         joystickController.Init();
