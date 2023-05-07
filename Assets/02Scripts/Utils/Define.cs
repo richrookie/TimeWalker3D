@@ -1,20 +1,20 @@
 ﻿public class Define
 {
-    public enum eGameState
+    public enum eGameState : byte
     {
         Ready,
         Play,
         End,
     }
 
-    public enum eJoyStickMethod
+    public enum eJoyStickMethod : byte
     {
         DoNotUse,
         Fixed,
         Follow,
     }
 
-    public enum eAnimState
+    public enum eAnimState : byte
     {
         Idle,
         Run,
@@ -22,7 +22,7 @@
         Death
     }
 
-    public enum eSound
+    public enum eSound : byte
     {
         Bgm,
         TimeBack,
