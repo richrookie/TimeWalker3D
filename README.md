@@ -4,6 +4,6 @@ Role : Client Programmer<br>
 Platform : aos, ios<br>
 Core Logic : Player.cs, AlterEgo.cs
 
-![image](https://github.com/Jpot777/TimeWalker3D/assets/83854046/2d883547-dcf2-40ec-b12f-4e80f72b1802)
-![image](https://github.com/Jpot777/TimeWalker3D/assets/83854046/e0a62b15-c1f1-40c4-bdb9-4ab74e42d38d)
-![image](https://github.com/Jpot777/TimeWalker3D/assets/83854046/e7282e5f-e5ca-414e-bfda-a6b9ab163f3c)
+![image](https://github.com/Jpot777/TimeWalker3D/assets/83854046/e58a0369-2f64-4a85-a9ec-70c376f229c0)
+![image](https://github.com/Jpot777/TimeWalker3D/assets/83854046/e47f05dc-6e54-4b62-9006-842d9b7cac60)
+![image](https://github.com/Jpot777/TimeWalker3D/assets/83854046/f371d008-768f-4b6e-90db-d7a09fb4ffce)
