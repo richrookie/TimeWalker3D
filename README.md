@@ -1,5 +1,5 @@
 # TimeWalker3D Portfolio
-Project Outline : 첫 2D 게임 프로젝트, 상/하단 뷰로 나뉜 슈팅 캐쥬얼 게임! !<br>
+Project Outline : LOL 에코 캐릭터에서 영감을 받아 제작된 퍼즐/액션 캐쥬얼 게임!
 Role : Client Programmer<br>
 Platform : aos, ios<br>
 Core Logic : Player.cs, AlterEgo.cs
