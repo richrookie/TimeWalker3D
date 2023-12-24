@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
+    [SerializeField]
     private Vector3 _offset = new Vector3(0, 70, -40);
     private float _speed = 10f;
     private Transform _target = null;

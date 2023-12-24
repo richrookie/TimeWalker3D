@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
 
         Managers.Resource.Instantiate("Player");
         Managers.Resource.Instantiate("Ground");
+        Managers.Resource.Instantiate("Directional Light");
 
         player.Init();
         camManager.Init();

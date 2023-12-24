@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
 
 public class Player : MonoBehaviour
 {
@@ -28,6 +27,7 @@ public class Player : MonoBehaviour
         _skinMeshRdr = Util.FindChild<SkinnedMeshRenderer>(this.gameObject, "Sphere", true);
         _trailRdr = this.transform.GetComponentsInChildren<TrailRenderer>();
         _rigid = this.GetComponent<Rigidbody>();
+
         foreach (var trail in _trailRdr)
         {
             trail.time = 0f;
@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
 
         foreach (var trail in _trailRdr)
         {
-            trail.time = 1f;
+            trail.time = 1.1f;
         }
 
         _alterEgo = Managers.Resource.Instantiate("AlterEgo");
@@ -94,7 +94,7 @@ public class Player : MonoBehaviour
 
         for (int n = 0; n < _movePosList.Count; n += 1)
         {
-            this.transform.DOMove(_movePosList[n], .01f);
+            this.transform.position = _movePosList[n];
 
             yield return Util.WaitGet(.011f);
         }

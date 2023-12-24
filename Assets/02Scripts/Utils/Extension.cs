@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
 using System.Threading.Tasks;
-using DG.Tweening;
+
 internal static class Extension
 {
     public static T GetOrAddComponent<T>(this GameObject go) where T : UnityEngine.Component

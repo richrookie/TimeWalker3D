@@ -16,7 +16,7 @@ public class DataManager
         set
         {
             _useHaptic = value;
-            ES3.Save<bool>("Haptic", value);
+            PlayerPrefs.SetInt("Haptic", _useHaptic ? 1 : 0);
         }
     }
     [SerializeField]
@@ -28,7 +28,7 @@ public class DataManager
         set
         {
             _useSound = value;
-            ES3.Save<bool>("Sound", value);
+            PlayerPrefs.SetInt("Sound", _useSound ? 1 : 0);
             Managers.Sound.BgmOnOff(value);
         }
     }
@@ -42,7 +42,7 @@ public class DataManager
 
     public void GetData()
     {
-        UseHaptic = ES3.Load<bool>("Haptic", true);
-        UseSound = ES3.Load<bool>("Sound", true);
+        UseHaptic = (PlayerPrefs.GetInt("Haptic", 1) != 0);
+        UseSound = (PlayerPrefs.GetInt("Sound", 1) != 0);
     }
 }

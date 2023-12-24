@@ -1,5 +1,5 @@
+using System.Collections;
 using UnityEngine;
-using DG.Tweening;
 
 public class Clock : MonoBehaviour
 {
@@ -32,13 +32,31 @@ public class Clock : MonoBehaviour
 
     private void Timeback()
     {
-        DOTween.Sequence()
-                .Append(_spriteRdr[0].DOFade(0, .5f).SetDelay(1f))
-                .Join(_spriteRdr[1].DOFade(0, .5f))
-                .Join(_spriteRdr[2].DOFade(0, .5f))
-                .OnComplete(() =>
-                {
-                    Destroy(this.gameObject);
-                });
+        StartCoroutine(CorFadeClock());
+    }
+
+    private IEnumerator CorFadeClock()
+    {
+        yield return Util.WaitGet(.75f);
+
+        Color color0 = _spriteRdr[0].color;
+        Color color1 = _spriteRdr[1].color;
+        Color color2 = _spriteRdr[2].color;
+
+        while (true)
+        {
+            if (color0.a <= 0)
+                break;
+
+            color0.a -= .025f;
+            color1.a -= .025f;
+            color2.a -= .025f;
+
+            _spriteRdr[0].color = color0;
+            _spriteRdr[1].color = color1;
+            _spriteRdr[2].color = color2;
+
+            yield return Util.WaitGet(.01f);
+        }
     }
 }

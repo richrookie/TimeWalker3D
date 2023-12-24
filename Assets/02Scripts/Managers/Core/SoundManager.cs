@@ -85,7 +85,6 @@ public class SoundManager
             if (_audioClips.TryGetValue(path, out audioClip) == false)
             {
                 audioClip = Managers.Resource.Load<AudioClip>(path);
-                UnityEngine.Debug.Log(audioClip);
                 _audioClips.TryAdd(path, audioClip);
             }
         }

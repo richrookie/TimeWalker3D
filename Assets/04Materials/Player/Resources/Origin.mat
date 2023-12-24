@@ -8,14 +8,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Origin
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ValidKeywords:
-  - _EMISSION
-  - _GLOSSYREFLECTIONS_OFF
-  - _SPECULARHIGHLIGHTS_OFF
+  m_Shader: {fileID: 6, guid: 0000000000000000f000000000000000, type: 0}
+  m_ValidKeywords: []
   m_InvalidKeywords:
   - DR_RIM_ON
   - _CELPRIMARYMODE_SINGLE
+  - _EMISSION
+  - _GLOSSYREFLECTIONS_OFF
+  - _SPECULARHIGHLIGHTS_OFF
   - _TEXTUREBLENDINGMODE_MULTIPLY
   - _UNITYSHADOWMODE_NONE
   m_LightmapFlags: 2
@@ -111,6 +111,7 @@ Material:
     - _SelfShadingSizeExtra: 0.6
     - _ShadowEdgeSize: 0.027
     - _ShadowEdgeSizeExtra: 0.05
+    - _Shininess: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularEnabled: 0
     - _SpecularHighlights: 0
@@ -125,15 +126,17 @@ Material:
     - _VertexColorsEnabled: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.7372549, g: 0.13725491, b: 0.1764706, a: 1}
+    - _Color: {r: 1, g: 0.19339621, b: 0.24934553, a: 1}
     - _ColorDim: {r: 0.5471698, g: 0.08627451, b: 0.10980392, a: 1}
     - _ColorDimCurve: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
     - _ColorDimExtra: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
     - _ColorDimSteps: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
     - _ColorGradient: {r: 0.7647059, g: 0.20970964, b: 0.20392153, a: 1}
+    - _Emission: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0.3490566, g: 0.11360805, b: 0.1363561, a: 1}
     - _FlatRimColor: {r: 1.82, g: 0.7, b: 0.27, a: 1}
     - _FlatSpecularColor: {r: 0.7647059, g: 0.20970964, b: 0.20392153, a: 1}
     - _OutlineColor: {r: 0, g: 1, b: 0.13428688, a: 1}
+    - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
     - _UnityShadowColor: {r: 0.85023, g: 0.85034, b: 0.85045, a: 0.85056}
   m_BuildTextureStacks: []
